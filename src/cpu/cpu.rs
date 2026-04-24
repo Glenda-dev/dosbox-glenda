@@ -162,15 +162,24 @@ impl Cpu {
         glenda::println!("Registers:");
         glenda::println!(
             "  AX: {:04x}  BX: {:04x}  CX: {:04x}  DX: {:04x}",
-            self.regs.ax, self.regs.bx, self.regs.cx, self.regs.dx
+            self.regs.ax,
+            self.regs.bx,
+            self.regs.cx,
+            self.regs.dx
         );
         glenda::println!(
             "  SI: {:04x}  DI: {:04x}  SP: {:04x}  BP: {:04x}",
-            self.regs.si, self.regs.di, self.regs.sp, self.regs.bp
+            self.regs.si,
+            self.regs.di,
+            self.regs.sp,
+            self.regs.bp
         );
         glenda::println!(
             "  CS: {:04x}  DS: {:04x}  ES: {:04x}  SS: {:04x}",
-            self.regs.cs, self.regs.ds, self.regs.es, self.regs.ss
+            self.regs.cs,
+            self.regs.ds,
+            self.regs.es,
+            self.regs.ss
         );
         glenda::println!("  IP: {:04x}  Flags: {:04x}", self.regs.ip, self.regs.flags);
     }
